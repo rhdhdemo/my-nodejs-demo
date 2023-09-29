@@ -1,0 +1,14 @@
+
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: my-nodejs-demo
+  annotations:
+    backstage.io/kubernetes-id: my-nodejs-demo
+    backstage.io/techdocs-ref: dir:.
+    github.com/project-slug: rhdhdemo/my-nodejs-demo
+spec:
+  type: api
+  system: default
+  lifecycle: production
+  owner: user:default/arunhari82
