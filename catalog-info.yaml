@@ -8,7 +8,7 @@ metadata:
     backstage.io/techdocs-ref: dir:.
     github.com/project-slug: rhdhdemo/my-nodejs-demo
 spec:
-  type: api
+  type: service
   system: default
   lifecycle: production
   owner: user:default/arunhari82
