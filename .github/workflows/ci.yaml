@@ -6,9 +6,10 @@ on:
       - main
 
 env:
+  QUAY_REGISTRY: https://quay-registry.apps.cluster-kt8jn.dynamic.opentlc.com
   IMAGE_NAME: ${{ github.event.repository.name }}
   IMAGE_TAGS: latest ${{ github.sha }}
-  IMAGE_REGISTRY: quay.io
+  IMAGE_REGISTRY: ${{ env.QUAY_REGISTRY }}
   IMAGE_NAMESPACE: ${{ secrets.REGISTRY_NAMESPACE }}
   USERNAME: ${{ secrets.REGISTRY_USERNAME }}
   PASSWORD: ${{ secrets.REGISTRY_PASSWORD }}
@@ -33,7 +34,7 @@ jobs:
           containerfiles: |
             ./Dockerfile
 
-      - name: Log in to Quay.io
+      - name: Log in to Quay local
         uses: redhat-actions/podman-login@v1
         with:
           username: ${{ env.USERNAME }}
