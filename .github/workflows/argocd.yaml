@@ -22,6 +22,6 @@ jobs:
           namespace: ${{ secrets.OPENSHIFT_NAMESPACE }}
           insecure_skip_tls_verify: true
 
-      - name: Create/Update ArgoCD app
+      - name: Create/Update ArgoCD app ci/cd
         run: |
           oc apply -n ${{ secrets.OPENSHIFT_NAMESPACE }} -f ./manifest/argocd/app.yaml
