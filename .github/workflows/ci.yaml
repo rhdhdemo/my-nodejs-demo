@@ -9,7 +9,7 @@ env:
   IMAGE_NAME: ${{ github.event.repository.name }}
   IMAGE_TAGS: latest ${{ github.sha }}
   IMAGE_REGISTRY: quay-registry.apps.cluster-kt8jn.dynamic.opentlc.com
-  IMAGE_NAMESPACE: ${{ secrets.REGISTRY_NAMESPACE }}
+  IMAGE_NAMESPACE: rhdh
   USERNAME: ${{ secrets.REGISTRY_USERNAME }}
   PASSWORD: ${{ secrets.REGISTRY_PASSWORD }}
 
