@@ -3,7 +3,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: my-nodejs-argo-app
-  namespace: rhdh-projects
+  namespace: cicd
   labels:
     argocd/app-name: my-nodejs-demo-argo
   annotations:
