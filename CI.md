@@ -4,7 +4,7 @@
 
 The GitHub Actions CI Method will require repository secrets setup before GitHub Actions can run
 
-# Create these under orf secrets and variables for Actions
+# Create these under orf secrets and variables for Actions Updated namespace
 
 SECRETS
 ArgoCD Secrets
