@@ -5,9 +5,9 @@ metadata:
   name: my-nodejs-argo-app
   namespace: rhdh-projects
   labels:
-    argocd/app-name: poi-poi-map-app-dev
+    argocd/app-name: my-nodejs-demo-argo
   annotations:
-    argocd/app-name: poi-poi-map-app-dev
+    argocd/app-name: my-nodejs-demo-argo
   finalizers:
     - resources-finalizer.argocd.argoproj.io  
 spec:
