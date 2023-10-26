@@ -15,7 +15,7 @@ spec:
   source:
     repoURL: https://github.com/rhdhdemo/my-nodejs-demo.git
     targetRevision: HEAD
-    path: ./helm/app
+    path: ./manifest/argocd/helm/app
   destination:
     server: https://kubernetes.default.svc
     namespace: rhdh-projects
