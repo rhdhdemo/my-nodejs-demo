@@ -8,7 +8,7 @@ on:
 
 jobs:
   login:
-    name: OpenShift Login and apply ArgoCD
+    name: OpenShift Login and apply ArgoCD to CI/CD Namespace
     runs-on: ubuntu-latest
 
     steps:
